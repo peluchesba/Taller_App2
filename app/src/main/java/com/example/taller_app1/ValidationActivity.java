@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -13,6 +15,9 @@ public class ValidationActivity extends AppCompatActivity {
     private TextView Id_valida;
 
     @Override
+
+
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_validation);
@@ -24,10 +29,14 @@ public class ValidationActivity extends AppCompatActivity {
 
     }
 
+
+
     public void Home(View view) {
         Intent home = new Intent(this, MainActivity.class);
         Toast.makeText(this, "Volviendo", Toast.LENGTH_SHORT).show();
         startActivity(home);
     }
+
+
 
 }
